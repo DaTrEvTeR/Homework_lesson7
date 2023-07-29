@@ -78,7 +78,7 @@ import random
 # видаленних елементів.
 
 
-# # Створюємо функцію, яка видаляє всі вказані елементи зі списку та повертає к-сть видалених:
+# Створюємо функцію, яка видаляє всі вказані елементи зі списку та повертає к-сть видалених:
 # def remove_element_from_list(my_lst, user_num): # Функція приймає список, та число яке потрібно видалити
 #     copy_lst = my_lst.copy() # Копіюємо початковий список, щоб потім порівняти його з Відредагованим
 #     while user_num in my_lst: # За допомогою циклу повторюємо метод ремув поки не видаляться всі елементи
@@ -90,16 +90,17 @@ import random
 # my_lst = [random.randint(1, 5) for number in range(10)]
 # print(my_lst)
 #
+# try:
+#     # Запитуємо в користувача який елемент він хоче видалити:
+#     user_num = int(input('Enter number to remove from list: '))
 #
-# # Запитуємо в користувача який елемент він хоче видалити:
-# user_num = int(input('Enter number to remove from list: '))
 #
-#
-# # Записуємо результат у змінну та виводимо його:
-# res = remove_element_from_list(my_lst, user_num)
-# print(my_lst)
-# print(f'Removed {res} elements')
-
+#     # Записуємо результат у змінну та виводимо його:
+#     res = remove_element_from_list(my_lst, user_num)
+#     print(my_lst)
+#     print(f'Removed {res} elements')
+# except Exception:
+#     print('Ups.. some problem here, try again :)')
 
 # Завдання 5
 # Напишіть функцію, яка отримує два списки як параметр і повертає список, що містить елементи обох списків.
