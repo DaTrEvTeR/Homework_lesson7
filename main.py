@@ -105,31 +105,31 @@ import random
 # Напишіть функцію, яка отримує два списки як параметр і повертає список, що містить елементи обох списків.
 
 
-def list_matches(lst1: list, lst2: list) -> list:
-    matches = [] # Створюємо список для додавання в нього елементів які є в обох списках
-    lst1_copy, lst2_copy = lst1.copy(), lst2.copy() # Робимо копії списків, щоб не втручатися в оригінали списків
-    lst1_copy, lst2_copy = set(lst1_copy), set(lst2_copy) # Переводимо списки у сети, щоб відсіяти однакові елементи
-    if len(lst1_copy) >= len(lst2_copy): # Звіряємо довжину обох списків, щоб робити менше ітерацій у циклі
-        for i in lst2_copy:
-            if i in lst1_copy:
-                matches.append(i)
-    else:
-        for i in lst1_copy:
-            if i in lst2_copy:
-                matches.append(i)
-    return matches # Повертаємо знайдені метчі
-
-
-# Створюємо 2 списка, та виводимо їх користувачу
-random_list_1 = [random.randint(-10, 10) for num in range(20)]
-random_list_2 = [random.randint(-10, 10) for num in range(20)]
-print(random_list_1)
-print(random_list_2)
-
-
-# Записуємо результат роботи функції у змінній та виводимо його у консоль
-res = list_matches(random_list_1, random_list_2)
-print(f'В обох списках присутні наступні елементи: {res}')
+# def list_matches(lst1: list, lst2: list) -> list:
+#     matches = [] # Створюємо список для додавання в нього елементів які є в обох списках
+#     lst1_copy, lst2_copy = lst1.copy(), lst2.copy() # Робимо копії списків, щоб не втручатися в оригінали списків
+#     lst1_copy, lst2_copy = set(lst1_copy), set(lst2_copy) # Переводимо списки у сети, щоб відсіяти однакові елементи
+#     if len(lst1_copy) >= len(lst2_copy): # Звіряємо довжину обох списків, щоб робити менше ітерацій у циклі
+#         for i in lst2_copy:
+#             if i in lst1_copy:
+#                 matches.append(i)
+#     else:
+#         for i in lst1_copy:
+#             if i in lst2_copy:
+#                 matches.append(i)
+#     return matches # Повертаємо знайдені метчі
+#
+#
+# # Створюємо 2 списка, та виводимо їх користувачу
+# random_list_1 = [random.randint(-10, 10) for num in range(20)]
+# random_list_2 = [random.randint(-10, 10) for num in range(20)]
+# print(random_list_1)
+# print(random_list_2)
+#
+#
+# # Записуємо результат роботи функції у змінній та виводимо його у консоль
+# res = list_matches(random_list_1, random_list_2)
+# print(f'В обох списках присутні наступні елементи: {res}')
 
 
 # Завдання 6
