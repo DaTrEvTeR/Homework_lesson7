@@ -6,22 +6,22 @@ import random
 # повертається із функції.
 
 
-# Створюємо функцію для обчислення добутку елементів списка:
-def multiply_user_list(user_list):
-    result = 1
-    for i in user_list:
-        result *= i
-    return result
-
-
-# Генеруємо список цілих чисел та виводимо його користувачу:
-my_lst = [random.randint(1, 10) for number in range(5)]
-print(my_lst)
-
-
-# Записуємо результат обчислення добутку списку у змінну та виводимо результат користувачу:
-res = multiply_user_list(my_lst)
-print(res)
+# # Створюємо функцію для обчислення добутку елементів списка:
+# def multiply_user_list(user_list):
+#     result = 1
+#     for i in user_list:
+#         result *= i
+#     return result
+#
+#
+# # Генеруємо список цілих чисел та виводимо його користувачу:
+# my_lst = [random.randint(1, 10) for number in range(5)]
+# print(my_lst)
+#
+#
+# # Записуємо результат обчислення добутку списку у змінну та виводимо результат користувачу:
+# res = multiply_user_list(my_lst)
+# print(res)
 
 
 # Завдання 2
