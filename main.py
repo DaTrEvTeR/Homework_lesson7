@@ -29,18 +29,18 @@ import random
 # повертається із функції.
 
 
-# Створюємо функцію, яка повертає найменьше з списку
-def minimum_of_user_list(user_list): return min(user_list)
-
-
-# Генеруємо список цілих чисел та виводимо його користувачу:
-my_lst = [random.randint(-100, 100) for number in range(20)]
-print(my_lst)
-
-
-# Записуємо результат у змінну та виводимо його:
-res = minimum_of_user_list(my_lst)
-print(res)
+# # Створюємо функцію, яка повертає найменьше з списку
+# def minimum_of_user_list(user_list): return min(user_list)
+#
+#
+# # Генеруємо список цілих чисел та виводимо його користувачу:
+# my_lst = [random.randint(-100, 100) for number in range(20)]
+# print(my_lst)
+#
+#
+# # Записуємо результат у змінну та виводимо його:
+# res = minimum_of_user_list(my_lst)
+# print(res)
 
 
 # Завдання 3
