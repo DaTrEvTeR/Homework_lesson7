@@ -135,3 +135,21 @@ import random
 # Завдання 6
 # Напишіть функцію, яка обчислює ступінь кожного елемента списку цілих. Значення для ступеня передається як параметр,
 # список також передається як параметр. Функція повертає новий список, який містить отримані результати.
+
+
+def pow_list(lst1: list, user_pow: int) -> list: # Передаємо як параметр список, та ступінь
+    lst1_powed = []
+    for i in lst1:
+        lst1_powed.append(pow(i, user_pow))
+    return lst1_powed
+
+
+lst1 = [random.randint(-10, 10) for num in range(20)]
+print(lst1)
+
+try:
+    user_pow = int(input('Enter a pow: '))
+    res = pow_list(lst1, user_pow)
+    print(res)
+except Exception:
+    print('Ups.. some problem here, try again :)')
